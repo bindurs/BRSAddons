@@ -1,9 +1,5 @@
 //
 //  BRSActivityIndicator.swift
-//  BRSAddOnsExample
-//
-//  Created by Bindu on 08/01/18.
-//  Copyright © 2018 Bindu. All rights reserved.
 //
 
 import UIKit

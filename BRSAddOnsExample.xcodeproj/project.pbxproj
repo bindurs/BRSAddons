@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42DC90A20038ADF00A48363 /* BRSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DC90920038ADF00A48363 /* BRSLabel.swift */; };
+		F42DC90C20038AFE00A48363 /* BRSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DC90B20038AFE00A48363 /* BRSTextField.swift */; };
+		F42DC90E20038B1600A48363 /* BRSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DC90D20038B1600A48363 /* BRSView.swift */; };
 		F44DE7D12003485E00E985F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DE7D02003485E00E985F6 /* AppDelegate.swift */; };
 		F44DE7D32003485E00E985F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DE7D22003485E00E985F6 /* ViewController.swift */; };
 		F44DE7D62003485E00E985F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DE7D42003485E00E985F6 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F42DC90920038ADF00A48363 /* BRSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSLabel.swift; sourceTree = "<group>"; };
+		F42DC90B20038AFE00A48363 /* BRSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSTextField.swift; sourceTree = "<group>"; };
+		F42DC90D20038B1600A48363 /* BRSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSView.swift; sourceTree = "<group>"; };
 		F44DE7CD2003485E00E985F6 /* BRSAddOnsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRSAddOnsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44DE7D02003485E00E985F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44DE7D22003485E00E985F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				F44DE7E3200348DF00E985F6 /* BRSActivityIndicator.swift */,
+				F42DC90920038ADF00A48363 /* BRSLabel.swift */,
+				F42DC90B20038AFE00A48363 /* BRSTextField.swift */,
+				F42DC90D20038B1600A48363 /* BRSView.swift */,
 			);
 			path = BRSAddOns;
 			sourceTree = "<group>";
@@ -147,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42DC90E20038B1600A48363 /* BRSView.swift in Sources */,
+				F42DC90A20038ADF00A48363 /* BRSLabel.swift in Sources */,
+				F42DC90C20038AFE00A48363 /* BRSTextField.swift in Sources */,
 				F44DE7D32003485E00E985F6 /* ViewController.swift in Sources */,
 				F44DE7E4200348DF00E985F6 /* BRSActivityIndicator.swift in Sources */,
 				F44DE7D12003485E00E985F6 /* AppDelegate.swift in Sources */,
