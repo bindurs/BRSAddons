@@ -6,10 +6,34 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var customView: BRSView!
+    @IBOutlet weak var label: BRSLabel!
+    @IBOutlet weak var paddingTextField: BRSTextField!
+    @IBOutlet weak var placeholderTextView: BRSPlaceholderTextView!
     var activityIndictor : BRSActivityIndicator?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        placeholderTextView.placeholderText = "textview with placeholder"
+        placeholderTextView.placeholderFont = UIFont(name: "Arial-BoldMT", size: 12)
+        placeholderTextView.placeholderColor = UIColor.blue
+        placeholderTextView.textViewBorderColor = UIColor.black
+        placeholderTextView.tintColor = UIColor.red
+        placeholderTextView.textViewBorderWidth = 5.0
+        placeholderTextView.textViewCornerRadius = 5.0
+        
+        paddingTextField.borderColor = UIColor.black
+        paddingTextField.borderWidth = 5
+        paddingTextField.cornerRadius = 5
+        
+        label.borderColor = UIColor.black
+        label.borderWidth = 5
+        label.cornerRadius = 5
+        
+        customView.borderColor = UIColor.black
+        customView.borderWidth = 5
+        customView.cornerRadius = 5
     }
     
     @IBAction func btnPressed(_ sender: UIButton) {

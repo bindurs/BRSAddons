@@ -6,7 +6,9 @@ import UIKit
 
 class BRSTextField: UITextField {
     
-    
+    var textFieldCornerRadius : CGFloat?
+    var textFieldBorderColor: UIColor?
+    var textFieldBorderWidth : CGFloat?
     
     @IBInspectable var cornerRadius: CGFloat {
         get {
@@ -48,11 +50,9 @@ class BRSTextField: UITextField {
     }
     
     func setup () {
-        layer.cornerRadius = 5
-        layer.borderColor = UIColor(red:0.10, green:0.23, blue:0.39, alpha:1.0).cgColor
-        layer.borderWidth = 2
-        backgroundColor = UIColor.black
-        textColor = UIColor.white
+        
+        backgroundColor = UIColor.white
+        textColor = UIColor.black
     }
     
     
@@ -68,4 +68,20 @@ class BRSTextField: UITextField {
         return inset
     }
     
+    //MARK:- Custom accessors
+    
+    func setTextFieldCornerRadius(textFieldCornerRadius:CGFloat) {
+        self.layer.cornerRadius = textFieldCornerRadius
+        self.sizeToFit()
+    }
+    
+    func setTextFieldBorderWidth(textFieldBorderWidth:CGFloat) {
+        self.layer.borderWidth = textFieldBorderWidth
+        self.sizeToFit()
+    }
+    
+    func setTextFieldBorderColor(textFieldBorderColor:UIColor) {
+        self.layer.borderColor = textFieldBorderColor.cgColor
+        self.sizeToFit()
+    }
 }

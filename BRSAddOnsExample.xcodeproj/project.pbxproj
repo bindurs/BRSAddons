@@ -16,6 +16,7 @@
 		F44DE7D82003485E00E985F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44DE7D72003485E00E985F6 /* Assets.xcassets */; };
 		F44DE7DB2003485E00E985F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DE7D92003485E00E985F6 /* LaunchScreen.storyboard */; };
 		F44DE7E4200348DF00E985F6 /* BRSActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DE7E3200348DF00E985F6 /* BRSActivityIndicator.swift */; };
+		F48E2754200483CA008EBA0C /* BRSPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E2753200483CA008EBA0C /* BRSPlaceholderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F44DE7DA2003485E00E985F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44DE7DC2003485E00E985F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44DE7E3200348DF00E985F6 /* BRSActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSActivityIndicator.swift; sourceTree = "<group>"; };
+		F48E2753200483CA008EBA0C /* BRSPlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSPlaceholderTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				F42DC90920038ADF00A48363 /* BRSLabel.swift */,
 				F42DC90B20038AFE00A48363 /* BRSTextField.swift */,
 				F42DC90D20038B1600A48363 /* BRSView.swift */,
+				F48E2753200483CA008EBA0C /* BRSPlaceholderTextView.swift */,
 			);
 			path = BRSAddOns;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42DC90E20038B1600A48363 /* BRSView.swift in Sources */,
+				F48E2754200483CA008EBA0C /* BRSPlaceholderTextView.swift in Sources */,
 				F42DC90A20038ADF00A48363 /* BRSLabel.swift in Sources */,
 				F42DC90C20038AFE00A48363 /* BRSTextField.swift in Sources */,
 				F44DE7D32003485E00E985F6 /* ViewController.swift in Sources */,

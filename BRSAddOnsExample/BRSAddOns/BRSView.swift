@@ -5,6 +5,10 @@ import UIKit
 
 class BRSView: UIView {
     
+    var viewCornerRadius : CGFloat?
+    var viewBorderColor: UIColor?
+    var viewBorderWidth : CGFloat?
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
@@ -43,9 +47,24 @@ class BRSView: UIView {
     }
     
     func setup () {
-        self.layer.cornerRadius = 5
-        self.layer.borderColor = UIColor(red:0.10, green:0.23, blue:0.39, alpha:1.0).cgColor
-        self.layer.borderWidth = 2
-        backgroundColor = UIColor.black
+       
+        backgroundColor = UIColor.white
+    }
+    
+    //MARK:- Custom accessors
+    
+    func setViewCornerRadius(viewCornerRadius:CGFloat) {
+        self.layer.cornerRadius = viewCornerRadius
+        self.sizeToFit()
+    }
+    
+    func setViewBorderWidth(viewBorderWidth:CGFloat) {
+        self.layer.borderWidth = viewBorderWidth
+        self.sizeToFit()
+    }
+    
+    func setViewBorderColor(viewBorderColor:UIColor) {
+        self.layer.borderColor = viewBorderColor.cgColor
+        self.sizeToFit()
     }
 }

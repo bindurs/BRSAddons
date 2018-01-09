@@ -6,6 +6,10 @@ import UIKit
 
 class BRSLabel: UILabel {
     
+    var labelCornerRadius : CGFloat?
+    var labelBorderColor: UIColor?
+    var labelBorderWidth : CGFloat?
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
@@ -46,9 +50,7 @@ class BRSLabel: UILabel {
     }
     
     func setup () {
-        layer.cornerRadius = 5
-        layer.borderColor = UIColor(red:0.10, green:0.23, blue:0.39, alpha:1.0).cgColor
-        layer.borderWidth = 2
+      
         backgroundColor = UIColor.black
         textColor = UIColor.white
     }
@@ -57,6 +59,23 @@ class BRSLabel: UILabel {
     override public func drawText(in rect:CGRect) {
         let insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
+    }
+    
+    //MARK:- Custom accessors
+    
+    func setLabelCornerRadius(labelCornerRadius:CGFloat) {
+        self.layer.cornerRadius = labelCornerRadius
+        self.sizeToFit()
+    }
+    
+    func setLabelBorderWidth(labelBorderWidth:CGFloat) {
+        self.layer.borderWidth = labelBorderWidth
+        self.sizeToFit()
+    }
+    
+    func setLabelBorderColor(labelBorderColor:UIColor) {
+        self.layer.borderColor = labelBorderColor.cgColor
+        self.sizeToFit()
     }
 
 }
