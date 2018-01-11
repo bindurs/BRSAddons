@@ -8,11 +8,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="ChalkboardSE.ttc">
-            <string>ChalkboardSE-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,119 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itq-Di-UtV" customClass="BRSLabel" customModule="BRSAddOnsExample" customModuleProvider="target">
-                                <rect key="frame" x="112" y="75" width="150" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9BF-yb-gUc"/>
-                                    <constraint firstAttribute="height" constant="45" id="9UE-gV-bRH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TextField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4oQ-i4-YsQ" customClass="BRSTextField" customModule="BRSAddOnsExample" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="140" width="150" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="CSs-nw-o6o"/>
-                                    <constraint firstAttribute="width" constant="150" id="d86-5G-pTl"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="margin">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4N-t0-ZL3" customClass="BRSView" customModule="BRSAddOnsExample" customModuleProvider="target">
-                                <rect key="frame" x="112" y="205" width="150" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="2aU-4v-zkd"/>
-                                    <constraint firstAttribute="width" constant="150" id="AI4-rJ-KsI"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-n2-vSh" customClass="BRSPlaceholderTextView" customModule="BRSAddOnsExample" customModuleProvider="target">
-                                <rect key="frame" x="20" y="270" width="335" height="75"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="0d4-mQ-J84"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkG-fG-Q70">
-                                <rect key="frame" x="148.5" y="365" width="78" height="45"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="WYp-ch-7ck"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
-                                <state key="normal" title="Click Here!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jTo-8u-Xu2"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="itq-Di-UtV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4TE-hv-hJO"/>
-                            <constraint firstItem="UkG-fG-Q70" firstAttribute="top" secondItem="Efp-n2-vSh" secondAttribute="bottom" constant="20" id="93W-YB-ruY"/>
-                            <constraint firstItem="UkG-fG-Q70" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DGc-hT-Qlf"/>
-                            <constraint firstItem="Efp-n2-vSh" firstAttribute="top" secondItem="H4N-t0-ZL3" secondAttribute="bottom" constant="20" id="FvM-FO-Fd0"/>
-                            <constraint firstItem="itq-Di-UtV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="75" id="Ith-zp-f0F"/>
-                            <constraint firstItem="4oQ-i4-YsQ" firstAttribute="top" secondItem="itq-Di-UtV" secondAttribute="bottom" constant="20" id="KY3-MM-mhr"/>
-                            <constraint firstItem="hJI-kp-57X" firstAttribute="trailing" secondItem="Efp-n2-vSh" secondAttribute="trailing" constant="20" id="T74-oY-D4q"/>
-                            <constraint firstItem="H4N-t0-ZL3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XMQ-2t-seC"/>
-                            <constraint firstItem="H4N-t0-ZL3" firstAttribute="top" secondItem="4oQ-i4-YsQ" secondAttribute="bottom" constant="20" id="aOM-Cb-zJZ"/>
-                            <constraint firstItem="4oQ-i4-YsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cCe-39-qgE"/>
-                            <constraint firstItem="Efp-n2-vSh" firstAttribute="leading" secondItem="hJI-kp-57X" secondAttribute="leading" constant="20" id="fvs-fT-l0p"/>
-                            <constraint firstItem="Efp-n2-vSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNF-Ft-W0t"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hJI-kp-57X"/>
                     </view>
-                    <connections>
-                        <outlet property="customView" destination="H4N-t0-ZL3" id="RVa-Gp-VEz"/>
-                        <outlet property="label" destination="itq-Di-UtV" id="vII-gl-cJF"/>
-                        <outlet property="paddingTextField" destination="4oQ-i4-YsQ" id="5GJ-bv-M2n"/>
-                        <outlet property="placeholderTextView" destination="Efp-n2-vSh" id="5bE-zq-cMu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

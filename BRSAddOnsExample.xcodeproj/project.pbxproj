@@ -17,7 +17,22 @@
 		F44DE7DB2003485E00E985F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DE7D92003485E00E985F6 /* LaunchScreen.storyboard */; };
 		F44DE7E4200348DF00E985F6 /* BRSActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DE7E3200348DF00E985F6 /* BRSActivityIndicator.swift */; };
 		F48E2754200483CA008EBA0C /* BRSPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48E2753200483CA008EBA0C /* BRSPlaceholderTextView.swift */; };
+		F4ED105D20073A0A0008EC14 /* BRSAddOnsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED105C20073A0A0008EC14 /* BRSAddOnsExampleTests.swift */; };
+		F4ED106520073A710008EC14 /* BRSLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED106420073A710008EC14 /* BRSLabelTests.swift */; };
+		F4ED106720073EA60008EC14 /* BRSTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED106620073EA60008EC14 /* BRSTextFieldTests.swift */; };
+		F4ED1069200740340008EC14 /* BRSViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED1068200740340008EC14 /* BRSViewTests.swift */; };
+		F4ED106B20074D1A0008EC14 /* BRSActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED106A20074D1A0008EC14 /* BRSActivityIndicatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4ED105F20073A0A0008EC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44DE7C52003485E00E985F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44DE7CC2003485E00E985F6;
+			remoteInfo = BRSAddOnsExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F42DC90920038ADF00A48363 /* BRSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSLabel.swift; sourceTree = "<group>"; };
@@ -32,10 +47,24 @@
 		F44DE7DC2003485E00E985F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44DE7E3200348DF00E985F6 /* BRSActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSActivityIndicator.swift; sourceTree = "<group>"; };
 		F48E2753200483CA008EBA0C /* BRSPlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSPlaceholderTextView.swift; sourceTree = "<group>"; };
+		F4ED105A20073A0A0008EC14 /* BRSAddOnsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRSAddOnsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4ED105C20073A0A0008EC14 /* BRSAddOnsExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSAddOnsExampleTests.swift; sourceTree = "<group>"; };
+		F4ED105E20073A0A0008EC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4ED106420073A710008EC14 /* BRSLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSLabelTests.swift; sourceTree = "<group>"; };
+		F4ED106620073EA60008EC14 /* BRSTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSTextFieldTests.swift; sourceTree = "<group>"; };
+		F4ED1068200740340008EC14 /* BRSViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSViewTests.swift; sourceTree = "<group>"; };
+		F4ED106A20074D1A0008EC14 /* BRSActivityIndicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSActivityIndicatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F44DE7CA2003485E00E985F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4ED105720073A0A0008EC14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F44DE7CF2003485E00E985F6 /* BRSAddOnsExample */,
+				F4ED105B20073A0A0008EC14 /* BRSAddOnsExampleTests */,
 				F44DE7CE2003485E00E985F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F44DE7CD2003485E00E985F6 /* BRSAddOnsExample.app */,
+				F4ED105A20073A0A0008EC14 /* BRSAddOnsExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +118,19 @@
 			path = BRSAddOns;
 			sourceTree = "<group>";
 		};
+		F4ED105B20073A0A0008EC14 /* BRSAddOnsExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED105C20073A0A0008EC14 /* BRSAddOnsExampleTests.swift */,
+				F4ED105E20073A0A0008EC14 /* Info.plist */,
+				F4ED106420073A710008EC14 /* BRSLabelTests.swift */,
+				F4ED106620073EA60008EC14 /* BRSTextFieldTests.swift */,
+				F4ED1068200740340008EC14 /* BRSViewTests.swift */,
+				F4ED106A20074D1A0008EC14 /* BRSActivityIndicatorTests.swift */,
+			);
+			path = BRSAddOnsExampleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +151,24 @@
 			productReference = F44DE7CD2003485E00E985F6 /* BRSAddOnsExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F4ED105920073A0A0008EC14 /* BRSAddOnsExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4ED106320073A0A0008EC14 /* Build configuration list for PBXNativeTarget "BRSAddOnsExampleTests" */;
+			buildPhases = (
+				F4ED105620073A0A0008EC14 /* Sources */,
+				F4ED105720073A0A0008EC14 /* Frameworks */,
+				F4ED105820073A0A0008EC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4ED106020073A0A0008EC14 /* PBXTargetDependency */,
+			);
+			name = BRSAddOnsExampleTests;
+			productName = BRSAddOnsExampleTests;
+			productReference = F4ED105A20073A0A0008EC14 /* BRSAddOnsExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -120,6 +182,11 @@
 					F44DE7CC2003485E00E985F6 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					F4ED105920073A0A0008EC14 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F44DE7CC2003485E00E985F6;
 					};
 				};
 			};
@@ -137,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				F44DE7CC2003485E00E985F6 /* BRSAddOnsExample */,
+				F4ED105920073A0A0008EC14 /* BRSAddOnsExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +217,13 @@
 				F44DE7DB2003485E00E985F6 /* LaunchScreen.storyboard in Resources */,
 				F44DE7D82003485E00E985F6 /* Assets.xcassets in Resources */,
 				F44DE7D62003485E00E985F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4ED105820073A0A0008EC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +244,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4ED105620073A0A0008EC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4ED106520073A710008EC14 /* BRSLabelTests.swift in Sources */,
+				F4ED106B20074D1A0008EC14 /* BRSActivityIndicatorTests.swift in Sources */,
+				F4ED106720073EA60008EC14 /* BRSTextFieldTests.swift in Sources */,
+				F4ED1069200740340008EC14 /* BRSViewTests.swift in Sources */,
+				F4ED105D20073A0A0008EC14 /* BRSAddOnsExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4ED106020073A0A0008EC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44DE7CC2003485E00E985F6 /* BRSAddOnsExample */;
+			targetProxy = F4ED105F20073A0A0008EC14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F44DE7D42003485E00E985F6 /* Main.storyboard */ = {
@@ -328,6 +423,38 @@
 			};
 			name = Release;
 		};
+		F4ED106120073A0A0008EC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DM37TEFRF;
+				INFOPLIST_FILE = BRSAddOnsExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xminds.BRSAddOnsExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRSAddOnsExample.app/BRSAddOnsExample";
+			};
+			name = Debug;
+		};
+		F4ED106220073A0A0008EC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DM37TEFRF;
+				INFOPLIST_FILE = BRSAddOnsExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xminds.BRSAddOnsExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRSAddOnsExample.app/BRSAddOnsExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +472,15 @@
 			buildConfigurations = (
 				F44DE7E02003485E00E985F6 /* Debug */,
 				F44DE7E12003485E00E985F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4ED106320073A0A0008EC14 /* Build configuration list for PBXNativeTarget "BRSAddOnsExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4ED106120073A0A0008EC14 /* Debug */,
+				F4ED106220073A0A0008EC14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
