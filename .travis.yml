@@ -1,4 +1,4 @@
+language: objective-c
 osx_image: xcode9
-language: swift
 xcode_project: BRSAddOnsExample.xcodeproj 
 xcode_scheme: BRSAddOnsExampleTests
