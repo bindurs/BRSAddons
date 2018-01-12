@@ -28,37 +28,52 @@ import XCTest
 @testable import BRSAddOnsExample
 
 class BRSActivityIndicatorTests: XCTestCase {
-  
+    
     let activityIndicator = BRSActivityIndicator()
- 
+    let activityType  = Activity_Type.BRSACTIVITYLARGE
+    let activityColor = UIColor.red
+    let activitySize :NSNumber = 300
+    let activityCornerRadius : CGFloat = 10.0
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        activityIndicator.setActivityType(type: activityType)
+        activityIndicator.activityColor = activityColor
+        activityIndicator.activityIndicatorSize = activitySize
+        activityIndicator.activityCornerRadius = activityCornerRadius
     }
     
-    func testActivityType() {
-        let activityType  = Activity_Type.BRSACTIVITYLARGE
-        activityIndicator.setActivityType(type: activityType)
+    func testActivityTypeNil() {
         XCTAssert(activityIndicator.activityType != nil)
     }
     
-    func testActivityColor() {
-        let activityColor = UIColor.red
-        activityIndicator.activityColor = activityColor
+    func testActivityColorNil() {
         XCTAssert(activityIndicator.activityColor != nil)
-        
     }
     
-    func testActivitySize() {
-        let activitySize :NSNumber = 300
-        activityIndicator.activityIndicatorSize = activitySize
+    func testActivitySizeZero() {
         XCTAssert(activityIndicator.activityIndicatorSize != 0)
     }
     
-    func testActivityCornerRadius() {
-        let activityCornerRadius : CGFloat = 10.0
-        activityIndicator.activityCornerRadius = activityCornerRadius
+    func testActivityCornerRadiusZero() {
         XCTAssert(activityIndicator.activityCornerRadius != 0)
+    }
+    
+    func testActivityType() {
+        XCTAssert(activityIndicator.activityType == activityType)
+    }
+    
+    func testActivityColor() {
+        XCTAssert(activityIndicator.activityColor == activityColor)
+    }
+    
+    func testActivitySize() {
+        XCTAssert(activityIndicator.activityIndicatorSize == activitySize)
+    }
+    
+    func testActivityCornerRadius() {
+        XCTAssert(activityIndicator.activityCornerRadius == activityCornerRadius)
     }
     
     override func tearDown() {

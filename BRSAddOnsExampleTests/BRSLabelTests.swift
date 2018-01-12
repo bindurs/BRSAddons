@@ -29,29 +29,39 @@ import XCTest
 class BRSLabelTests: XCTestCase {
     
     let label = BRSLabel()
-    
+    let cornerRadius : CGFloat = 5.0
+    let borderWidth : CGFloat = 2.0
+    let borderColor  = UIColor.red
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        label.setLabelCornerRadius(labelCornerRadius: cornerRadius)
+        label.setLabelBorderWidth(labelBorderWidth: borderWidth)
+        label.setLabelBorderColor(labelBorderColor: borderColor)
+    }
+    
+    func testCornerRadiusZero() {
+        XCTAssert(label.cornerRadius != 0)
+    }
+    
+    func testBorderWidthZero() {
+        XCTAssert(label.borderWidth != 0)
+    }
+    
+    func testBorderColorNil() {
+        XCTAssert(label.borderColor != nil)
     }
     
     func testCornerRadius() {
-        let cornerRadius : CGFloat = 5.0
-        label.setLabelCornerRadius(labelCornerRadius: cornerRadius)
-        XCTAssert(label.cornerRadius > 0)
+        XCTAssert(label.cornerRadius == cornerRadius)
     }
     
     func testBorderWidth() {
-        let borderWidth : CGFloat = 2.0
-        label.setLabelBorderWidth(labelBorderWidth: borderWidth)
-        XCTAssert(label.borderWidth > 0)
-        
+        XCTAssert(label.borderWidth == borderWidth)
     }
     
     func testBorderColor() {
-        let borderColor  = UIColor.red
-        label.setLabelBorderColor(labelBorderColor: borderColor)
-        XCTAssert(label.borderColor != nil)
+        XCTAssert(label.borderColor == borderColor)
     }
     
     override func tearDown() {

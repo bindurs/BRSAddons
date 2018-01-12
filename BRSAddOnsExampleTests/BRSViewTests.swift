@@ -30,29 +30,40 @@ import XCTest
 class BRSViewTests: XCTestCase {
     
     let bView = BRSView()
+    let cornerRadius : CGFloat = 5.0
+    let borderWidth : CGFloat = 2.0
+    let borderColor  = UIColor.red
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        bView.setViewCornerRadius(viewCornerRadius: cornerRadius)
+        bView.setViewBorderWidth(viewBorderWidth: borderWidth)
+        bView.setViewBorderColor(viewBorderColor: borderColor)
+    }
+    
+    func testCornerRadiusZero() {
+        XCTAssert(bView.cornerRadius != 0)
+    }
+    
+    func testBorderWidthZero() {
+        XCTAssert(bView.borderWidth != 0)
+    }
+    
+    func testBorderColorNil() {
+        XCTAssert(bView.borderColor != nil)
     }
     
     func testCornerRadius() {
-        let cornerRadius : CGFloat = 5.0
-        bView.setViewCornerRadius(viewCornerRadius: cornerRadius)
-        XCTAssert(bView.cornerRadius > 0)
+        XCTAssert(bView.cornerRadius == cornerRadius)
     }
     
     func testBorderWidth() {
-        let borderWidth : CGFloat = 2.0
-        bView.setViewBorderWidth(viewBorderWidth: borderWidth)
-        XCTAssert(bView.borderWidth > 0)
-        
+        XCTAssert(bView.borderWidth == borderWidth)
     }
     
     func testBorderColor() {
-        let borderColor  = UIColor.red
-        bView.setViewBorderColor(viewBorderColor: borderColor)
-        XCTAssert(bView.borderColor != nil)
+        XCTAssert(bView.borderColor == borderColor)
     }
     
     override func tearDown() {
